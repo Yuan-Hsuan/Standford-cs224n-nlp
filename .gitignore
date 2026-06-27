@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# CS224n Course Slides and Notes
+lectures/slides/
+lectures/notes/
+
