@@ -74,8 +74,10 @@ Below is a weekly tracking template structured for a 10-week course layout.
 
 **Study notes** (`notes/`) — maintained by my TA (Claude), English + 繁中
 
-- `notes/concepts/word-embeddings.md` — one-hot → dense embeddings; why "embedding"
-- `notes/concepts/svd-dimensionality-reduction.md` — eigenvalues, SVD derivation, Truncated SVD
+- `notes/concepts/00-concept-map.md` — index + how the concept notes relate
+- `notes/concepts/01-word-embeddings.md` — one-hot → dense embeddings; why "embedding"
+- `notes/concepts/02-count-based-svd.md` — co-occurrence + SVD (eigenvalues, Truncated SVD)
+- `notes/concepts/03-word2vec-and-glove.md` — word2vec (neural) & GloVe (hybrid)
 - `notes/mistakes-log.md` — dated log of misconceptions + corrections
 
 ---

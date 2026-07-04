@@ -16,6 +16,12 @@ Newest entries at the top.
 
 <!-- entries go below -->
 
+## 2026-07-04 — Singular value vs eigenvalue (S in SVD)
+- **Context:** 收工 quiz Q1 (why the word vector is U·S).
+- **What I thought:** "S is the diagonal matrix of **eigenvalues** of A."
+- **Correct understanding:** S holds **singular values** σᵢ, which are the **square root of the eigenvalues of AᵀA** (σ = √λ). Singular value ≠ eigenvalue. (A isn't even square in general, so "eigenvalues of A" is ill-defined; the eigenvalues live on AᵀA / AAᵀ.) And the word vector is U·S because U gives only *direction* while S scales each axis by that topic's *importance* (σ).
+- **Pattern tag:** svd, singular-value-vs-eigenvalue, terminology-precision
+
 ## 2026-07-03 — Word vector = rows of U·S, not U alone
 - **Context:** a1 Q1.3 `reduce_to_k_dim` + SVD concept note. (User caught an imprecise definition in the note by checking against `Singular_Value_Decomposition_Tutorial.pdf`.)
 - **What was wrong:** The note said "rows of U are the word vectors."

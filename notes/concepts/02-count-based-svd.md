@@ -1,8 +1,8 @@
-# SVD & Dimensionality Reduction 奇異值分解與降維 (incl. Eigenvalues)
+# 02 · Count-Based Word Vectors: SVD 計數式詞向量:共現 + SVD (incl. Eigenvalues)
 
 > **Use 用途**: math core of Assignment 1 · Q1.3 `reduce_to_k_dim` — compress a high-dim
 > co-occurrence matrix into low-dim word vectors. 把高維共現矩陣壓成低維詞向量。
-> **Related 關聯**: [[word-embeddings]]
+> **Related 關聯**: [[01-word-embeddings]]
 > **How to read 讀法**: §1–§2 basics → **§3–§4 the core (theorem + meaning)** → §6 how to compute → §7–§8 code.
 
 ---
@@ -168,7 +168,7 @@ $$A \approx U_k\,S_k\,V_k^T$$
 - Dropped small-$\sigma$ directions ≈ noise; large-$\sigma$ topics kept. 丟噪音留主題。
 - Same essence as **PCA**: keep max-variance directions and project. 與 PCA 同本質。
 - **Why semantics survive** 語義為何還在: kept topics encode "which words share contexts", so
-  *doctor–hospital* stay close, *doctor–dog* stay far → the dense, similarity-aware [[word-embeddings]].
+  *doctor–hospital* stay close, *doctor–dog* stay far → the dense, similarity-aware [[01-word-embeddings]].
 
 ---
 
@@ -194,6 +194,14 @@ iterations. 冪次迭代次數。
 - Why 10 (sklearn default 5)? Co-occurrence matrices have **slowly-decaying** singular values, so a
   few extra iterations stabilize the result. 奇異值衰減慢,多迭代幾輪更穩。
 - It trades **accuracy ↔ speed**; does **not** change the output shape. 只影響精度/速度,不改形狀。
+
+### 8.2 Singular vectors have an arbitrary sign 奇異向量的正負號是任意的
+
+If $u$ is a singular vector, so is $-u$ — both are valid. Randomized `TruncatedSVD` may return either
+sign, so a 2-D plot can come out **mirrored or rotated 180°** vs a reference figure.
+奇異向量正負號任意,所以畫出來的圖可能左右/上下翻轉,這不是 bug。
+**Only relative positions (which words cluster) are meaningful; the axis orientation is not.**
+有意義的是相對位置與分群,座標軸方向沒有意義。
 
 ---
 
