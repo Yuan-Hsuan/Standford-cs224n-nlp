@@ -225,3 +225,6 @@ lectures/notes/
 .DS_Store
 **/.DS_Store
 
+
+# Local-only TA protocol (do not push)
+CLAUDE.md
