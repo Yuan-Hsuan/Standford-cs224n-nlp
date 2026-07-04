@@ -47,7 +47,7 @@ Below is a weekly tracking template structured for a 10-week course layout.
 
 | Week | Lecture Topics | Materials & Slides | Deliverable | Status |
 | :--- | :--- | :--- | :--- | :---: |
-| **Week 1** | **Lectures 01 & 02**: Intro to NLP & Word Vectors, Word2Vec, GloVe, Word Embeddings | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Start **Assignment 1** (Word Vectors) | `[ ]` |
+| **Week 1** | **Lectures 01 & 02**: Intro to NLP & Word Vectors, Word2Vec, GloVe, Word Embeddings | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Start **Assignment 1** (Word Vectors) | `[~]` |
 | **Week 2** | **Lectures 03 & 04**: Subword Models & Neural Networks, Word Window Classification, Backpropagation | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Submit **Assignment 1** | `[ ]` |
 | **Week 3** | **Lectures 05 & 06**: Backprop Math, Computations, Dependency Parsing | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Start **Assignment 2** (Word2Vec Implementation) | `[ ]` |
 | **Week 4** | **Lectures 07 & 08**: Recurrent Neural Networks (RNNs) & LSTMs/GRUs | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Submit **Assignment 2** & Start **Assignment 3** (Dependency Parser) | `[ ]` |
@@ -57,6 +57,26 @@ Below is a weekly tracking template structured for a 10-week course layout.
 | **Week 8** | **Lectures 15 & 16**: RLHF, DPO, Reasoning, Agents, Tool Use | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Begin working on the **Final Project** baseline | `[ ]` |
 | **Week 9** | **Lectures 17 & 18**: Model Efficiency (Quantization, LoRA), Interpretability & Probe analysis | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Submit **Assignment 5** | `[ ]` |
 | **Week 10** | **Lectures 19 & 20**: Safety/Bias in NLP, Multimodal VLMs, Future of NLP | [Archive Web](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/) | Final Project evaluations and wrap-up | `[ ]` |
+
+---
+
+## 📌 Current Progress (updated 2026-07-03)
+
+**Assignment 1 — Exploring Word Vectors**
+
+- **Part 1 · Count-Based Vectors (10 pts) — ✅ done**
+  - Q1.1 `distinct_words` · Q1.2 `compute_co_occurrence_matrix` · Q1.3 `reduce_to_k_dim`
+  - Q1.4 `plot_embeddings` · Q1.5 co-occurrence plot analysis (written)
+- **Part 2 · Prediction-Based Vectors — GloVe (15 pts) — 🔄 in progress**
+  - Environment fixed: macOS python.org SSL certs (ran `Install Certificates.command`) so `gensim`
+    can download `glove-wiki-gigaword-200`
+  - Next: Q2.1 GloVe plot analysis → synonyms/antonyms, analogies, bias
+
+**Study notes** (`notes/`) — maintained by my TA (Claude), English + 繁中
+
+- `notes/concepts/word-embeddings.md` — one-hot → dense embeddings; why "embedding"
+- `notes/concepts/svd-dimensionality-reduction.md` — eigenvalues, SVD derivation, Truncated SVD
+- `notes/mistakes-log.md` — dated log of misconceptions + corrections
 
 ---
 

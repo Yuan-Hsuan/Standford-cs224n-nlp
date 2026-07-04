@@ -221,3 +221,7 @@ __marimo__/
 lectures/slides/
 lectures/notes/
 
+# macOS
+.DS_Store
+**/.DS_Store
+
