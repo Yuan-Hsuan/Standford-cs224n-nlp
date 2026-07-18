@@ -6,7 +6,7 @@
 set -euo pipefail
 
 # Configurations
-BASE_URL="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/assignments"
+BASE_URL="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/assignments"
 ASSIGNMENTS=("a1" "a2" "a3" "a4" "a5")
 TARGET_DIRS=(
     "a1_word_vectors"

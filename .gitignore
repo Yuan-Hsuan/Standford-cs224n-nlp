@@ -228,3 +228,15 @@ lectures/notes/
 
 # Local-only TA protocol (do not push)
 CLAUDE.md
+
+# Assignment datasets — big files stay local; re-download via
+# scripts/setup_assignments.sh or each assignment's get_datasets.sh
+assignments/*/data/
+assignments/*/zh_en_data/
+assignments/a2_word2vec/utils/datasets/
+assignments/a5_pretrain_bert/wiki.txt
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Large reference PDFs — keep local only
+notes/Singular_Value_Decomposition_Tutorial.pdf
